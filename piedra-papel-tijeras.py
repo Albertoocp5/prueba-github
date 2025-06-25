@@ -10,7 +10,7 @@ print(f"Tu elegiste: {jugador}")
 print(f"El PC elgió: {pc}")
 
 if jugador==pc:
-  print "Hemos quedado empate! Juguemos otra."
+  print ("Hemos quedado empate! Juguemos otra.")
   jugador = input("Elige una de las tres: ").lower()
   pc = random.choice(opciones)
 elif (jugador == "piedra" and pc == "tijera") or \
