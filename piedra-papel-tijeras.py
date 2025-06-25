@@ -1,6 +1,6 @@
 import random
 
-opciones = ["Piedra", "Papel", "Tijeras"]
+opciones = ["piedra", "papel", "tijeras"]
 
 print("¡Juguemos a Piedra, Papel, Tijeras!")
 jugador = input("Elige una de las tres: ").lower()
