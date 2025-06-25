@@ -2,47 +2,74 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>¡Saluditos, colegona!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Saludos, máquina!</title>
   <style>
-    body {
-      background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      color: #fff;
-      padding-top: 100px;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tarjeta {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px 20px;
+      border-radius: 20px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.5em;
-      margin-bottom: 30px;
+      font-size: 1.2em;
+      margin-bottom: 15px;
     }
 
     .emoji {
-      font-size: 3em;
+      font-size: 2em;
+      margin: 10px 0;
     }
 
-    .tarjeta {
-      background-color: rgba(0, 0, 0, 0.3);
-      display: inline-block;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .emoji {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
   <div class="tarjeta">
-    <div class="emoji">👋😎🔥</div>
-    <h1>¡Ey, colega!</h1>
-    <p>Te mando un saludo desde mi página hecha a mano en GitHub 💻</p>
-    <p>¡Nos vemos en el código o en la vida real! 🤜🤛</p>
-    <div class="emoji">🚀✨</div>
+    <div class="emoji">👋🔥</div>
+    <h1>¡Ey, colegona!</h1>
+    <p>Te mando un saludo desde mi web hecha a mano 💻</p>
+    <p>¡Nos vemos por ahí! 😎</p>
+    <div class="emoji">🚀💥</div>
   </div>
 </body>
 </html>
+
